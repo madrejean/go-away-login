@@ -1,0 +1,19 @@
+{
+	"name": "Go Away Login — Login wall reducer",
+	"description": "Gets rid of login walls on websites? I guess.",
+	"manifest_version": 2,
+	"version": "1.0",
+
+	"homepage_url": "https://github.com/sierra-madre",
+
+	"icons": {
+		"48": "icons/icon-48.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://www.tumblr.com/*"],
+			"js": ["js/tumblr_block.js"]
+		}
+	]
+}
